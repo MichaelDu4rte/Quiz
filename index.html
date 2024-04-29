@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="quiz-wrapper">
+      <!-- quiz box -->
+      <div class="quiz-box" id="quiz">
+        <!-- questions info -->
+        <div class="question-count">
+          <p class="count">
+            <span id="count-question">3</span>/
+            <strong id="col-num-que">10</strong>
+          </p>
+          <p class="question-title">Question</p>
+        </div>
+
+        <div class="question-box">
+          <img src="image1.jpeg" alt="" id="question-image" />
+
+          <div class="question-box-text">
+            <span id="question-number">3</span>
+            <p id="question">Seu parceiro fala que ele não te ama mais?</p>
+          </div>
+        </div>
+        <!-- questions info end -->
+
+        <!-- answers box -->
+        <div class="answers-box">
+          <div class="box">
+            <div class="answer-number">A</div>
+            <input
+              type="radio"
+              name="option"
+              id="first"
+              value="a"
+              required
+              hidden
+            />
+            <label for="first" class="answer-label">Sim</label>
+          </div>
+
+          <div class="box">
+            <div class="answer-number">B</div>
+            <input
+              type="radio"
+              name="option"
+              id="second"
+              value="b"
+              required
+              hidden
+            />
+            <label for="second" class="answer-label">Não</label>
+          </div>
+        </div>
+        <!-- answers box end -->
+
+        <div class="button-box">
+          <button type="button" class="next-btn button" id="next-question-btn">
+            Proxima Pergunta
+          </button>
+          <button
+            type="button"
+            class="next-btn button submite-btn"
+            id="submite-btn"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+      <!-- quiz box end -->
+
+      <!-- Modal Result -->
+      <div class="result-modal" id="result">
+        <h2 id="score">Questoes acertadas</h2>
+        <div class="button-box">
+          <button
+            class="button"
+            onclick="window.location.href = 'https://suavidaadois.com/programa-meu-casamento-restaurado-3-0/?ref=E91980225E';"
+          >
+            Acessar
+          </button>
+        </div>
+      </div>
+      <!-- End Result -->
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Scripts -->
+    <script src="js/quizData.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
